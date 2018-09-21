@@ -6,6 +6,13 @@ var PLUGIN_NAME = "Slinkify LESS";
 
 function isNumber(n) { return n.match(/^\d/); } 
 function isBool(b) {return b=="true"|| b=="false"}
+function isColor(c) {return c.match(/^rgba?\(/g) || c.match(/^#/gm) || c.match(/^hsl\(/gm) }
+function isCSSVar(v) {return v.match(/^[-]+/gm)}
+function isMisc(m) {return m.match(/^calc\(/gm)}
+
+function checkIfString(value) {
+	return !isNumber(value) && !isBool(value) && !isColor(value) && !isCSSVar(value) && !isMisc(value);
+}
 
 function transformLessToCSS(contents) {
   var cssContents=":root {\n";
@@ -15,7 +22,7 @@ function transformLessToCSS(contents) {
       var transformedKey="\t--"+key+": ";
       var value = contents[key];
 
-      if(!isNumber(value) && !isBool(value)) {
+      if(checkIfString(value)) {
         value = "'"+value+"'";
       }
 
