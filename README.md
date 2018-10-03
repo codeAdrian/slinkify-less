@@ -1,6 +1,8 @@
 
 # Installation
+```
 npm install --save-dev https://github.com/codeAdrian/slinkify-less/archive/v0.2.0.tar.gz
+```
 
 # Use
 ```
