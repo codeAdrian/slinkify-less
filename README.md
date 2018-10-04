@@ -1,3 +1,9 @@
+# About
+Converts LESS variables to CSS variables.
+
+# Created by
+Adrian Bece (https://codeadrian.github.io/) and Filip Svetličić (https://inchoo.net/author/filip-svetlicic/profile/)
+
 
 # Installation
 ```

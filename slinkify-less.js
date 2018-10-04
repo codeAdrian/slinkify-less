@@ -19,7 +19,7 @@ function transformLessToCSS(contents) {
 
 	for (var key in contents) {
 		if (contents.hasOwnProperty(key)) {
-      var transformedKey="\t--"+key+": ";
+      var transformedKey="\xa0\xa0\xa0\xa0--"+key+": ";
       var value = contents[key];
 
       if(checkIfString(value)) {

@@ -1,6 +1,6 @@
 {
   "name": "slinkify-less",
-  "version": "v0.2.0",
+  "version": "v0.2.1",
   "description": "Convert LESS vars to SASS or CSS",
   "main": "slinkify-less.js",
   "scripts": {
