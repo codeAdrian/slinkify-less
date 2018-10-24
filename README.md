@@ -1,16 +1,19 @@
 # About
+
 Converts LESS variables to CSS variables.
 
 # Created by
+
 Adrian Bece (https://codeadrian.github.io/) and Filip Svetličić (https://inchoo.net/author/filip-svetlicic/profile/)
 
-
 # Installation
+
 ```
-npm install --save-dev https://github.com/codeAdrian/slinkify-less/archive/v0.2.0.tar.gz
+npm install --save-dev https://github.com/codeAdrian/slinkify-less/archive/v0.3.0.tar.gz
 ```
 
 # Use
+
 ```
 var slinkifyLess = require("slinkify-less");
 
