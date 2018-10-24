@@ -4,11 +4,21 @@ var lessToJs = require('less-vars-to-js');
 var replaceExtension = require('replace-ext');
 var PLUGIN_NAME = 'Slinkify LESS';
 
+var SPACING = generateSpaces(4);
+
+function generateSpaces(x) {
+	var str = '';
+	for (var i = 0; i < x; i++) {
+		str = ' ' + str;
+	}
+	return str;
+}
+
 function transformLessToCSS(contents) {
 	var cssContents = ':root {\n';
 	for (var key in contents) {
 		if (contents.hasOwnProperty(key)) {
-			var transformedKey = '\xa0\xa0\xa0\xa0--' + key + ': ';
+			var transformedKey = SPACING + '--' + key + ': ';
 			var value = decodeQuotationChars(contents[key]);
 
 			cssContents = cssContents + transformedKey + value + ';\n';
