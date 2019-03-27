@@ -9,7 +9,7 @@ Adrian Bece (https://codeadrian.github.io/) and Filip Svetličić (https://incho
 # Installation
 
 ```
-npm install --save-dev https://github.com/codeAdrian/slinkify-less/archive/v0.3.0.tar.gz
+npm install --save-dev https://github.com/codeAdrian/slinkify-less/archive/v[latest-version].tar.gz
 ```
 
 # Use
